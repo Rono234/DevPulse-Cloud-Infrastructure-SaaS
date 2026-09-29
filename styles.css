@@ -41,7 +41,6 @@ img {
 }
 a {
   color: var(--text-main);
-  text-decoration: none;
 }
 
 .button {
@@ -82,4 +81,43 @@ a {
 .button-secondary:hover{
     background-color: var(--bg-card);
     transform: translateY(-2px);
+}
+
+/* HEADER */
+
+.site-header{
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--bg-dark);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo{
+    color: var(--text-main);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.primar-nav{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.primar-nav > a{
+    color: var(--text-muted);
+    text-decoration: none;
+}
+
+.primar-nav > a:hover{
+    color: var(--text-main);
+}
+.primar-nav > .button-primary{
+    color: var(--text-main);
 }
