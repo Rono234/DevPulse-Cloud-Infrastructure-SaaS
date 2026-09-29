@@ -15,13 +15,14 @@
         <a href="#workload">Worldload</a>
         <a href="#api-registration"> API regisatration</a>
         <!-- CTA button -->
-        <a href="#api-registration" class="btn btn-primary"
+        <a href="#api-registration" class="button button-primary"
           >Deploy Free Cluster</a
         >
       </nav>
     </header>
     <!-- main, 5 sections -->
     <main>
+      <!-- HERO SECTION ---------------- -->
       <section id="hero" class="hero-section">
         <img
           src="https://cdn.prod.website-files.com/67b219410649fa2a90baa5b5/69fa323d7f8b498bbb781efa_6946232d328ab81a54632cd6_69404c5d005c2f3798333410_Cloud_vs_traditional.webp"
@@ -47,6 +48,8 @@
           </nav>
         </div>
       </section>
+
+      <!-- FEATURES SECTION ---------------- -->
       <section id="features" class="content-section">
         <header class="section-header">
           <p class="badge-pill">Infrastructure Monitoring</p>
@@ -93,9 +96,11 @@
           </article>
         </div>
       </section>
+
+      <!-- PRICING SECTION ---------------- -->
       <section id="pricing" class="content-section">
         <header class="section-header">
-          <p class="eyebrow">Compute Plans</p>
+          <p class="badge-pill">Compute Plans</p>
 
           <h2>Compute Tier Comparison</h2>
 
@@ -184,8 +189,117 @@
           </article>
         </div>
       </section>
-      <section id="workload" class="content-section"></section>
-      <section id="api-registration" class="content-section"></section>
+
+      <!-- WORKLOAD SECTION ---------------- -->
+      <section id="workload" class="content-section">
+        <header class="section-header">
+          <p class="badge-pill">Estimate Your Requirements</p>
+
+          <h2>Workload Estimator</h2>
+
+          <p>
+            Enter your estimated infrastructure node count and daily log
+            throughput to evaluate which DevPulse tier may fit your workload.
+          </p>
+        </header>
+        <form class="devpulse-form" action="#" method="get">
+          <fieldset>
+            <legend>Infrastructure Workload Requirements</legend>
+            <div class="form-field">
+              <label for="node-count">Node Count</label>
+              <input
+                type="number"
+                id="node-count"
+                name="nodeCount"
+                min="1"
+                max="1000"
+                step="1"
+                required
+              />
+              <span class="input-hint">Min 1 - Max 1000</span>
+            </div>
+
+            <div class="form-field">
+              <label for="log-throughput">Log Throughput</label>
+              <input
+                type="number"
+                id="log-throughput"
+                name="logThroughput"
+                min="1"
+                max="10000"
+                step="1"
+                required
+              />
+              <span class="input-hint">Min 1 — Max 10000 GB/day</span>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="button button-primary">
+            Check Tier Compatibility
+          </button>
+        </form>
+      </section>
+
+      <!-- API REGISTER SECTION ---------------- -->
+      <section id="api-registration" class="content-section">
+        <header class="section-header">
+          <p class="badge-pill">Developer Access</p>
+
+          <h2>API Sandbox Registration</h2>
+
+          <p>
+            Submit your contact information to receive DevPulse API sandbox
+            provisioning details.
+          </p>
+        </header>
+
+        <form action="#" class="devpluse-form" method="post">
+          <fieldset>
+            <legend>Developer Contact Information</legend>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="firstName" required />
+              </div>
+              <div class="form-field">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="lastName" required />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="work-email"> Work Email </label>
+
+              <input
+                id="work-email"
+                name="work-email"
+                type="email"
+                required
+                autocomplete="email"
+                placeholder="developer@company.com"
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="tier"> Cluster Tier </label>
+
+              <select id="tier" name="tier" required>
+                <option value="" selected disabled>Select a Tier</option>
+
+                <option value="developer">Developer</option>
+
+                <option value="pro">Pro Cluster</option>
+
+                <option value="enterprise">Enterprise Dedicated</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="button button-primary">
+            Request API Sandbox
+          </button>
+        </form>
+      </section>
     </main>
     <footer>
       <p>© 2026 DevPulse Cloud Infrastructure</p>
