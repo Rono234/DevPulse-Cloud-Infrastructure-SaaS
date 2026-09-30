@@ -1,32 +1,30 @@
 # DevPulse-Cloud-Infrastructure-SaaS
-CSI_3150 Assignment 1_b coding part
+CSI_3150 Assignment 1_B coding part
 
 **Author:** Raneen AlRammahi  
 **Course:** CSI-3150  
-**Date:** September 20, 2026  
+**Date:** September 29, 2026  
 
-# Section 1: The Less-than-or-Equal-to-4-Click User Journey Funnel
+## Features
 
-- **Starting State:**  
-  The user lands on the DevPulse homepage. The initial viewport displays the DevPulse branding, primary navigation links, core platform value proposition/metrics, and a prominent "Deploy Free Cluster" call-to-action.
+- Semantic HTML landmarks
+- Responsive Flexbox and CSS Grid layouts
+- Cloud compute pricing comparison
+- Workload estimator form
+- API sandbox registration form
+- Native HTML form validation
+- Responsive mobile layout
 
-- **Action 1:**  
-  The user scrolls or selects the "Pricing" navigation link to move directly to the tier comparison section.
+## Technologies
 
-- **Action 2:**  
-  The user reviews the Developer, Pro Cluster, and Enterprise Dedicated plans and selects the appropriate tier, such as "Pro Cluster."
-
-- **Action 3:**  
-  The user enters the expected node count and log throughput into the constrained workload estimator and reviews whether the selected tier supports the workload.
-
-- **Action 4:**  
-  The user completes the API provisioning registration form and activates the registration submission button.
-
-- **Terminal State:**  
-  The browser displays confirmation feedback indicating that the registration request was successfully submitted and that API sandbox provisioning information will be provided.
+- HTML5
+- CSS3
+- Flexbox
+- CSS Grid
+- Media Queries
 
 
-# Section 3: Semantic Component & Layout Tree
+# Semantic Component & Layout Tree
 
 ```text
 index.html
